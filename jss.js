@@ -41,7 +41,7 @@ $(document).ready(function () {
     fade: true,
     cssEase: "linear",
     autoplay: true,
-    autoplaySpeed: 300,
+    autoplaySpeed: 3000,
     dots: true,
 
 
