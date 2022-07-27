@@ -839,6 +839,7 @@ li {
   background-color: yellow;
   margin-right: 20px;
   border-radius: 30px;
+  padding-top: 69px;
 }
 .section05 > .con > .content-wrap > .content-box:nth-child(5){
   margin-top: 24px;
@@ -856,6 +857,7 @@ li {
   margin-top: 24px;
   margin-right: 20px;
   border-radius: 30px;
+  padding-top: 69px;
 }
 .section05 > .con > .content-wrap > .content-box01{
   background-image: url(../img/news1.png);
