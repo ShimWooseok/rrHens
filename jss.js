@@ -43,7 +43,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     dots: true,
-
+    pauseOnHover: false ,
 
   
 
@@ -64,6 +64,31 @@ $(document).ready(function () {
 
 
 
+
+    $(".section02 > .con > ul > li").click(function(){
+      let num = $(this).index()
+
+      $(".section02 > .con > ul > li").eq(num).addClass("active")
+      $(".section02 > .con > ul > li").eq(num).siblings().removeClass("active")
+      $(".section02 > .con > .content-wrap").eq(num).addClass("active")
+      $(".section02 > .con > .content-wrap").eq(num).siblings().removeClass("active")
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 $(window).scroll(function () {
   let scrollTop = $(this).scrollTop();
@@ -75,6 +100,11 @@ $(window).scroll(function () {
     $(".header").addClass("active");
   }
 
+  if(scrollTop>=600){
+    $(".top-btn").addClass("active")
+  } else if(scrollTop < 300){
+    $(".top-btn").removeClass("active")
+  }
 
 
 
