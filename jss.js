@@ -79,13 +79,9 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
+$("a").click(function(){
+  return false; // return false : 모든 기능 차단
+});
 
 
 
