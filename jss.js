@@ -33,6 +33,32 @@ $(document).ready(function () {
 
     $(".hidden-2-menu").removeClass("active")
   })
+  
+
+
+
+
+
+
+
+
+
+
+
+  $(" .side-fixed-bar > .side-left").click(function(){
+    $(".side-fixed-bar").toggleClass("active")
+  })
+
+
+
+
+
+
+
+
+
+
+
 
 
     $('.slide').slick({
@@ -76,6 +102,15 @@ $(document).ready(function () {
     })
 
 
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 7,
+      spaceBetween: 30,
+      centeredSlides: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
 
 
 
