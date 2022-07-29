@@ -223,6 +223,187 @@ $(document).ready(function () {
 
 
 
+
+  let sec04_tl = gsap.timeline()
+  
+  let sec04_ani01 = gsap.from(".section04 >  .title-bg > .one" , {
+    "opacity": 0 ,
+    y : "30px" ,
+  })
+  let sec04_ani02 = gsap.from(".section04 >  .title-bg > .two" , {
+    "opacity": 0 ,
+    y : "30px" ,
+  })
+  let sec04_ani03 = gsap.from(".section04 >  .title-bg > .three" , {
+    "opacity": 0 ,
+    y : "30px" ,
+  })
+  let sec04_ani04 = gsap.from(".section04 >   .title" , {
+    "opacity": 0 ,
+    y : "50px" ,
+  })
+  let sec04_ani05 = gsap.from(".section04 >   .sub-title" , {
+    "opacity": 0 ,
+    y : "50px" ,
+  })
+  let sec04_ani06 = gsap.from(".section04 >   .txt" , {
+    "opacity": 0 ,
+    y : "50px" ,
+  })
+  let sec04_ani07 = gsap.from(".section04 >   .swiper" , {
+    "opacity": 0 ,
+    y : "50px" ,
+  })
+  let sec04_ani08 = gsap.from(".section04" , {
+    "opacity": 0 ,
+    y : "100px" ,
+  })
+
+  sec04_tl.add(sec04_ani08)
+  sec04_tl.add(sec04_ani01,0.2)
+  sec04_tl.add(sec04_ani02,0.4)
+  sec04_tl.add(sec04_ani03,0.6)
+  sec04_tl.add(sec04_ani04,0.8)
+  sec04_tl.add(sec04_ani05,1)
+  sec04_tl.add(sec04_ani06,1.2)
+  sec04_tl.add(sec04_ani07,1.4)
+  
+
+
+  let scene04 = new ScrollMagic.Scene({
+    triggerElement: ".section03", // 스타트 지점을 생성
+    offset: 500 , // 스타트 지점을 이동
+    triggerHook: 0.3 , // 트리거 위치 지정
+    reverse:false
+  });
+
+scene04.setTween(sec04_tl); // 애니메이션 등록
+scene04.addTo(controller); // 컨트롤러 등록
+// scene01.addIndicators(); // 인디케이터 등록
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let sec05_tl = gsap.timeline()
+  
+let sec05_ani01 = gsap.from(".section05 > .con > .title-bg > .one" , {
+  "opacity": 0 ,
+  y : "30px" ,
+})
+let sec05_ani02 = gsap.from(".section05 > .con > .title-bg > .two" , {
+  "opacity": 0 ,
+  y : "30px" ,
+})
+let sec05_ani03 = gsap.from(".section05 > .con > .title-bg > .three" , {
+  "opacity": 0 ,
+  y : "30px" ,
+})
+let sec05_ani04 = gsap.from(".section05 >  .con > .title" , {
+  "opacity": 0 ,
+  y : "50px" ,
+})
+let sec05_ani05 = gsap.from(".section05 >  .con > .sub-title" , {
+  "opacity": 0 ,
+  y : "50px" ,
+})
+let sec05_ani06 = gsap.from(".section05 > .con >  .content-wrap > .content-box01" , {
+  "opacity": 0 ,
+  y : "50px" ,
+})
+let sec05_ani07 = gsap.from(".section05 >  .con > .content-wrap > .content-box02" , {
+  "opacity": 0 ,
+  y : "50px" ,
+})
+let sec05_ani08 = gsap.from(".section05 .con > .content-wrap > .content-box03 " , {
+  "opacity": 0 ,
+  y : "50px" ,
+})
+let sec05_ani09 = gsap.from(".section05 >  .con > .content-wrap > .content-box02" , {
+  "opacity": 0 ,
+  y : "50px" ,
+})
+let sec05_ani10 = gsap.from(".section05 .con > .content-wrap > .content-box03 " , {
+  "opacity": 0 ,
+  y : "50px" ,
+})
+
+sec05_tl.add(sec05_ani01)
+sec05_tl.add(sec05_ani02,0.2)
+sec05_tl.add(sec05_ani03,0.4)
+sec05_tl.add(sec05_ani04,0.6)
+sec05_tl.add(sec05_ani05,0.8)
+sec05_tl.add(sec05_ani06,1)
+sec05_tl.add(sec05_ani07,1.2)
+sec05_tl.add(sec05_ani08,1.4)
+sec05_tl.add(sec05_ani09,1.6)
+sec05_tl.add(sec05_ani10,1.8)
+
+
+let scene05 = new ScrollMagic.Scene({
+  triggerElement: ".section04", // 스타트 지점을 생성
+  offset: 300 , // 스타트 지점을 이동
+  triggerHook: 0.3 , // 트리거 위치 지정
+  reverse:false
+});
+
+scene05.setTween(sec05_tl); // 애니메이션 등록
+scene05.addTo(controller); // 컨트롤러 등록
+scene05.addIndicators(); // 인디케이터 등록
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 $("a").click(function(){
   return false; // return false : 모든 기능 차단
 });
