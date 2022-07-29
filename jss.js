@@ -112,6 +112,7 @@ $(document).ready(function () {
       triggerElement: ".slide-wrap", // 스타트 지점을 생성
       offset: 500 , // 스타트 지점을 이동
       triggerHook: 0.3 , // 트리거 위치 지정
+      reverse:false
     });
 
   scene01.setTween(sec01_tl); // 애니메이션 등록
@@ -146,6 +147,7 @@ $(document).ready(function () {
       triggerElement: ".slide-wrap", // 스타트 지점을 생성
       offset: 500, // 스타트 지점을 이동
       triggerHook: 0.3 , // 트리거 위치 지정
+      reverse:false
     });
 
     
@@ -210,6 +212,7 @@ $(document).ready(function () {
       triggerElement: ".section02", // 스타트 지점을 생성
       offset: 750 , // 스타트 지점을 이동
       triggerHook: 0.3 , // 트리거 위치 지정
+      reverse:false
     });
 
     
