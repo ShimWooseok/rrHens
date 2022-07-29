@@ -488,6 +488,7 @@ li {
 .section.section01 > .con{
   height: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 .title-bg{
   width: 100%;
@@ -512,14 +513,16 @@ li {
 }
 .section.section01 > .con > .title-box{
   margin-top: 5px;
+
 }
+
 .section.section01 > .con > .title-box > .title{
   width: 100%;
   height: auto;
   text-align: center;
   background : linear-gradient(to right top, #1682ff, #39CCFB);
   color: transparent;
-    -webkit-background-clip: text;
+  -webkit-background-clip: text;
   font-size: 57px;
   font-weight:600;
 }
@@ -587,6 +590,7 @@ li {
 }
 .section02 > .con > .title > .p1{
   letter-spacing: -3px;
+  font-weight: 500;
 }
 .section02 > .con > .title > .p2{
   color: #1682ff;
@@ -703,7 +707,6 @@ li {
   box-sizing: border-box;
   padding: 35px 39px;
   cursor: pointer;
-  transition: 0.5s;
 }
 .section03 > .con > .content-wrap > .content-box:hover{
   transition: 0.5s;

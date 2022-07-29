@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- 제이쿼리 자리 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- 외부 js자리 // 웹폰트 자리 // 폰트어썸 링크 자리 시작 -->
+  <title>RUHENS</title>
+  <!-- 제이쿼리 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <!-- 외부 js자리// 웹폰트// 폰트어썸 링크-->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+  
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -26,13 +26,25 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> 
+  <!-- gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+<!-- ScrollMagic -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<!-- ScrollMagic 인디케이터 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<!-- ScrollMagic & gsap 연동 플러그인 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
 
-  <!-- 우리가 만든 js css 링크하기 -->
+
+
+
+  <!--js css 링크하기 -->
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./jss.js"></script>
   <!-- 테일윈드 -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./jss.js"></script>
+
 </head>
 
 <body>
@@ -146,9 +158,6 @@
           </div>
         </div>
         <div class="content content02">
-
-
-
 <div class="txt-box">
             <div class="title">
               <p>내 지역 전문 코디에게 상담받고, <br>
@@ -195,11 +204,11 @@
     <div class="section section01">
       <div class="con">
         <p class="title-bg">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
         </p>
-        <div class="title-box">
+        <div class="title-box active">
           <div class="title">
             Life Category
           </div>
@@ -208,7 +217,7 @@
           </div>
         </div>
         <div class="content-wrap row">
-        <div class="content-box cell">
+        <div class="content-box move-box move01 cell">
           <div class="img-box">
             <img src="./img/water.png" alt="">
           </div>
@@ -223,7 +232,7 @@
             </div>
           </div>
         </div>
-        <div class="content-box cell">
+        <div class="content-box move-box move02 cell">
           <div class="img-box">
             <img src="./img/AirCare.png" alt="">
           </div>
@@ -238,7 +247,7 @@
             </div>
           </div>
         </div>
-        <div class="content-box cell">
+        <div class="content-box move-box move03 cell">
           <div class="img-box">
             <img src="./img/share.png" alt="">
           </div>
@@ -253,7 +262,7 @@
             </div>
           </div>
         </div>
-        <div class="content-box cell">
+        <div class="content-box move-box move04 cell">
           <div class="img-box">
             <img src="./img/care.png" alt="">
           </div>
@@ -274,7 +283,7 @@
     <div class="section section02">
       <div class="con">
         <div class="title ">
-          <span class="p1 ">카테고리별</span> <span class="p2">BEST</span>
+          <span class="p1 ">루헨스</span> <span class="p2">BEST</span>
         </div>
         <ul>
           <li class="active">정수기</li>
@@ -500,9 +509,9 @@
     <div class="section section03">
       <div class="con">
         <p class="title-bg">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
         </p>
         <div class="title">
           베스트 리뷰상품
@@ -511,7 +520,7 @@
           REVIEW
         </div>
         <div class="content-wrap">
-          <div class="content-box">
+          <div class="content-box content01">
             <div class="content">
               <div class="img-box">
                 <img src="./img/re1.png" alt="">
@@ -549,7 +558,7 @@
               </div>
             </div>
           </div>
-          <div class="content-box">
+          <div class="content-box content02">
             <div class="content">
               <div class="img-box">
                 <img src="./img/re2.png" alt="">
@@ -586,7 +595,7 @@
               </div>
             </div>
           </div>
-          <div class="content-box">
+          <div class="content-box content03">
             <div class="content">
               <div class="img-box">
                 <img src="./img/re3.png" alt="">
@@ -623,7 +632,7 @@
               </div>
             </div>
           </div>
-          <div class="content-box">
+          <div class="content-box content04">
             <div class="content">
               <div class="img-box">
                 <img src="./img/re4.png" alt="">
