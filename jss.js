@@ -384,40 +384,40 @@ let sec06_tl = gsap.timeline()
   
 let sec06_ani01 = gsap.from(".special-section > .con >  .title-bg > .one" , {
   "opacity": 0 ,
-  x : "-500px" ,
+  y : "50px" ,
 })
 let sec06_ani02 = gsap.from(".special-section > .con > .title-bg > .two" , {
   "opacity": 0 ,
-  x : "-500px" ,
+  y : "50px" ,
 })
 let sec06_ani03 = gsap.from(".special-section > .con > .title-bg > .three" , {
   "opacity": 0 ,
-  x : "-500px" ,
+  y : "50px" ,
 })
 let sec06_ani04 = gsap.from(".special-section > .con >  .title > .title-one" , {
   "opacity": 0 ,
-  x : "-500px" ,
+  y : "50px" ,
 })
 let sec06_ani05 = gsap.from(".special-section > .con >  .title > .title-two" , {
   "opacity": 0 ,
-  x : "-500px" ,
+  y : "50px" ,
 })
 let sec06_ani06 = gsap.from(".special-section >  .main-wrap > .ad-box" , {
   "opacity": 0 ,
-  x : "-500px" ,
+  x : "-200px" ,
 })
 let sec06_ani07 = gsap.from(".special-section >   .main-wrap > .main-box > .blue-box" , {
   "opacity": 0 ,
-  x : "-500px" ,
+  x : "-200px" ,
 })
 
-sec06_tl.add(sec06_ani01,0.6)
+sec06_tl.add(sec06_ani01,0.2)
 sec06_tl.add(sec06_ani02,0.4)
-sec06_tl.add(sec06_ani03,0.2)
+sec06_tl.add(sec06_ani03,0.6)
 sec06_tl.add(sec06_ani04,0.8)
 sec06_tl.add(sec06_ani05,1)
-sec06_tl.add(sec06_ani06,1.2)
-sec06_tl.add(sec06_ani07,1.4)
+sec06_tl.add(sec06_ani06,1.4)
+sec06_tl.add(sec06_ani07,1.8)
 
 
 
