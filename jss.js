@@ -271,8 +271,8 @@ $(document).ready(function () {
 
 
   let scene04 = new ScrollMagic.Scene({
-    triggerElement: ".section03", // 스타트 지점을 생성
-    offset: 500 , // 스타트 지점을 이동
+    triggerElement: ".special-section", // 스타트 지점을 생성
+    offset: 800 , // 스타트 지점을 이동
     triggerHook: 0.3 , // 트리거 위치 지정
     reverse:false
   });
@@ -289,8 +289,7 @@ scene04.addTo(controller); // 컨트롤러 등록
 
 
 
-
-
+//ss
 
 
 
@@ -330,15 +329,15 @@ let sec05_ani07 = gsap.from(".section05 >  .con > .content-wrap > .content-box02
   "opacity": 0 ,
   y : "50px" ,
 })
-let sec05_ani08 = gsap.from(".section05 .con > .content-wrap > .content-box03 " , {
+let sec05_ani08 = gsap.from(".section05 .con > .content-wrap > .content-box03" , {
   "opacity": 0 ,
   y : "50px" ,
 })
-let sec05_ani09 = gsap.from(".section05 >  .con > .content-wrap > .content-box02" , {
+let sec05_ani09 = gsap.from(".section05 >  .con > .content-wrap > .content-box04" , {
   "opacity": 0 ,
   y : "50px" ,
 })
-let sec05_ani10 = gsap.from(".section05 .con > .content-wrap > .content-box03 " , {
+let sec05_ani10 = gsap.from(".section05 .con > .content-wrap > .content-box05" , {
   "opacity": 0 ,
   y : "50px" ,
 })
@@ -364,7 +363,7 @@ let scene05 = new ScrollMagic.Scene({
 
 scene05.setTween(sec05_tl); // 애니메이션 등록
 scene05.addTo(controller); // 컨트롤러 등록
-scene05.addIndicators(); // 인디케이터 등록
+//scene05.addIndicators(); // 인디케이터 등록
 
 
 
@@ -374,6 +373,64 @@ scene05.addIndicators(); // 인디케이터 등록
 
 
 
+
+
+
+
+
+
+
+let sec06_tl = gsap.timeline()
+  
+let sec06_ani01 = gsap.from(".special-section > .con >  .title-bg > .one" , {
+  "opacity": 0 ,
+  x : "-500px" ,
+})
+let sec06_ani02 = gsap.from(".special-section > .con > .title-bg > .two" , {
+  "opacity": 0 ,
+  x : "-500px" ,
+})
+let sec06_ani03 = gsap.from(".special-section > .con > .title-bg > .three" , {
+  "opacity": 0 ,
+  x : "-500px" ,
+})
+let sec06_ani04 = gsap.from(".special-section > .con >  .title > .title-one" , {
+  "opacity": 0 ,
+  x : "-500px" ,
+})
+let sec06_ani05 = gsap.from(".special-section > .con >  .title > .title-two" , {
+  "opacity": 0 ,
+  x : "-500px" ,
+})
+let sec06_ani06 = gsap.from(".special-section >  .main-wrap > .ad-box" , {
+  "opacity": 0 ,
+  x : "-500px" ,
+})
+let sec06_ani07 = gsap.from(".special-section >   .main-wrap > .main-box > .blue-box" , {
+  "opacity": 0 ,
+  x : "-500px" ,
+})
+
+sec06_tl.add(sec06_ani01,0.6)
+sec06_tl.add(sec06_ani02,0.4)
+sec06_tl.add(sec06_ani03,0.2)
+sec06_tl.add(sec06_ani04,0.8)
+sec06_tl.add(sec06_ani05,1)
+sec06_tl.add(sec06_ani06,1.2)
+sec06_tl.add(sec06_ani07,1.4)
+
+
+
+let scene06 = new ScrollMagic.Scene({
+  triggerElement: ".section03", // 스타트 지점을 생성
+  offset: 850 , // 스타트 지점을 이동
+  triggerHook: 0.3 , // 트리거 위치 지정
+  reverse:false
+});
+
+scene06.setTween(sec06_tl); // 애니메이션 등록
+scene06.addTo(controller); // 컨트롤러 등록
+// scene01.addIndicators(); // 인디케이터 등록
 
 
 
