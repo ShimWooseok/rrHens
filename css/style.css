@@ -17,11 +17,11 @@ li {
 }
 @font-face {
   font-family: "123";
-  src: url(../billabong.ttf);
+  src: url(../font/billabong.ttf);
 }
 @font-face {
   font-family: "456";
-  src: url(../OPTIAlternateGothic-TwoAg.otf);
+  src: url(../font/OPTIAlternateGothic-TwoAg.otf);
 }
 
 /*라이브러리*/
