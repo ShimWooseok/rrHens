@@ -15,6 +15,14 @@ ul,
 li {
   list-style: none;
 }
+@font-face {
+  font-family: "123";
+  src: url(../billabong.ttf);
+}
+@font-face {
+  font-family: "456";
+  src: url(../OPTIAlternateGothic-TwoAg.otf);
+}
 
 /*라이브러리*/
 .cell {
@@ -42,6 +50,7 @@ li {
   width: 1420px;
   margin: 0 auto;
 }
+
 /* 스타일 */
 .big-section {
   position: relative;
@@ -148,6 +157,7 @@ li {
   margin-left: 64px;
   height: 78px;
   cursor: pointer;
+
   
 }
 .menu-bar > .con > ul > li {
@@ -248,11 +258,32 @@ li {
   cursor: pointer;
   transition: 0.7s;
 }
-.hidden-wrap > .hidden-menu > ul > li:nth-child(n + 6):nth-child(-n + 8) {
-  padding-left: 10px;
+
+.hidden-wrap > .hidden-menu > ul > li:nth-child(6) {
+  font-family: "123";
+  font-size: 40px;
+  background-image: url(../img/insta_icon.png);
+  background-position: 30px 25px ;
+  background-repeat: no-repeat;
+  padding-left: 90px;
+  color: black;
+}
+.hidden-wrap > .hidden-menu > ul > li:nth-child(7) {
+  background-image: url(../img/youtube-icon.png);
+  background-position: 30px 25px ;
+  background-repeat: no-repeat;
+  padding-left: 90px;
+  color: black;
+  font-weight: bold;
+  font-family: "456";
+  font-size: 40px;
 }
 .hidden-wrap > .hidden-menu > ul > li:nth-child(8) {
   border-bottom: 1px solid #1682ff;
+  background-image: url(../img/blog-icon.png);
+  background-position: 30px 25px ;
+  background-repeat: no-repeat;
+  padding-left: 90px;
 }
 .hidden-wrap > .hidden-menu > ul > li::after {
   content: "";
@@ -263,11 +294,25 @@ li {
   top: 0;
   left: 0;
   transition: width 0.3s;
+  line-height: 95px;
 }
+.hidden-wrap > .hidden-menu > ul > li:nth-child(6)::after{
+  background: linear-gradient(to right top, #5231B4, #BB166F, #F66723);
+}
+.hidden-wrap > .hidden-menu > ul > li:nth-child(7)::after{
+  
+background: linear-gradient(45deg, #F20746, red);
+}
+.hidden-wrap > .hidden-menu > ul > li:nth-child(8)::after{
+  
+background-color: #2db400;
+  }
 .hidden-wrap > .hidden-menu > ul > li:hover::after {
   width: 100%;
   content: "";
   color: #fff;
+  padding-left: 30px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .hidden-wrap > .hidden-menu > ul > li:nth-child(1):hover::after {
   content: "스토어";
@@ -290,17 +335,24 @@ li {
   padding-left: 30px;
 }
 .hidden-wrap > .hidden-menu > ul > li:nth-child(6):hover::after {
+  display: none;
   content: "인스타그램";
-  padding-left: 30px;
-
+  font-size: 30px;
+  background: linear-gradient(to right top, #5231B4, #BB166F, #F66723);
 }
 .hidden-wrap > .hidden-menu > ul > li:nth-child(7):hover::after {
+  display: none;
   content: "유튜브";
   padding-left: 30px;
+  background: linear-gradient(45deg, #F20746, red);
+  font-size: 30px;
+  font-weight: normal;
 }
 .hidden-wrap > .hidden-menu > ul > li:nth-child(8):hover::after {
+  display: none;
   content: "블로그";
   padding-left: 30px;
+  background-color: #2db400;
 }
 
 .hidden-wrap > .hidden-menu > ul > li > span > img {
@@ -310,6 +362,15 @@ li {
 }
 .hidden-wrap > .hidden-menu > ul > li > .two {
   margin-left: 0;
+}
+.hidden-wrap > .hidden-menu > ul > li > ul{
+  width: 100%;
+  height: 160px;
+  background-color: pink;
+}
+.hidden-wrap > .hidden-menu > ul > li > ul > li{
+  background-color: pink;
+  color: blue;
 }
 .hidden-2-menu {
   content: "";
@@ -1125,12 +1186,15 @@ li {
 }
 .section06 > .con > .title{
   text-align: center;
-  font-size: 57px;
-  font-weight: 100;
+  color : #666666;
+  font-size: 45px;
+  margin-top: 15px;
+  font-weight: 600;
 }
 .section06 > .con > .content-wrap{
   width: 100%;
-  height: auto;  display: flex;
+  height: auto;  
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 54px;
