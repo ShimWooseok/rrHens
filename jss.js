@@ -110,7 +110,7 @@ $(document).ready(function () {
 
     let scene01 = new ScrollMagic.Scene({
       triggerElement: ".slide-wrap", // 스타트 지점을 생성
-      offset: 500 , // 스타트 지점을 이동
+      offset: 400 , // 스타트 지점을 이동
       triggerHook: 0.3 , // 트리거 위치 지정
       reverse:false
     });
@@ -145,7 +145,7 @@ $(document).ready(function () {
 
     let scene02 = new ScrollMagic.Scene({
       triggerElement: ".slide-wrap", // 스타트 지점을 생성
-      offset: 500, // 스타트 지점을 이동
+      offset: 400, // 스타트 지점을 이동
       triggerHook: 0.3 , // 트리거 위치 지정
       reverse:false
     });
@@ -210,7 +210,7 @@ $(document).ready(function () {
 
     let scene03 = new ScrollMagic.Scene({
       triggerElement: ".section02", // 스타트 지점을 생성
-      offset: 750 , // 스타트 지점을 이동
+      offset: 650 , // 스타트 지점을 이동
       triggerHook: 0.3 , // 트리거 위치 지정
       reverse:false
     });
@@ -260,19 +260,19 @@ $(document).ready(function () {
   })
 
   sec04_tl.add(sec04_ani08)
-  sec04_tl.add(sec04_ani01,0.2)
-  sec04_tl.add(sec04_ani02,0.4)
-  sec04_tl.add(sec04_ani03,0.6)
-  sec04_tl.add(sec04_ani04,0.8)
-  sec04_tl.add(sec04_ani05,1)
-  sec04_tl.add(sec04_ani06,1.2)
-  sec04_tl.add(sec04_ani07,1.4)
+  sec04_tl.add(sec04_ani01,0.4)
+  sec04_tl.add(sec04_ani02,0.6)
+  sec04_tl.add(sec04_ani03,0.8)
+  sec04_tl.add(sec04_ani04,1)
+  sec04_tl.add(sec04_ani05,1.2)
+  sec04_tl.add(sec04_ani06,1.4)
+  sec04_tl.add(sec04_ani07,1.6)
   
 
 
   let scene04 = new ScrollMagic.Scene({
     triggerElement: ".special-section", // 스타트 지점을 생성
-    offset: 800 , // 스타트 지점을 이동
+    offset: 700 , // 스타트 지점을 이동
     triggerHook: 0.3 , // 트리거 위치 지정
     reverse:false
   });
@@ -356,7 +356,7 @@ sec05_tl.add(sec05_ani10,1.8)
 
 let scene05 = new ScrollMagic.Scene({
   triggerElement: ".section04", // 스타트 지점을 생성
-  offset: 300 , // 스타트 지점을 이동
+  offset: 250 , // 스타트 지점을 이동
   triggerHook: 0.3 , // 트리거 위치 지정
   reverse:false
 });
@@ -404,11 +404,11 @@ let sec06_ani05 = gsap.from(".special-section > .con >  .title > .title-two" , {
 })
 let sec06_ani06 = gsap.from(".special-section >  .main-wrap > .ad-box" , {
   "opacity": 0 ,
-  x : "-200px" ,
+  x : "-400px" ,
 })
 let sec06_ani07 = gsap.from(".special-section >   .main-wrap > .main-box > .blue-box" , {
   "opacity": 0 ,
-  x : "-200px" ,
+  x : "-400px" ,
 })
 
 sec06_tl.add(sec06_ani01,0.2)
@@ -423,7 +423,7 @@ sec06_tl.add(sec06_ani07,1.8)
 
 let scene06 = new ScrollMagic.Scene({
   triggerElement: ".section03", // 스타트 지점을 생성
-  offset: 850 , // 스타트 지점을 이동
+  offset: 750 , // 스타트 지점을 이동
   triggerHook: 0.3 , // 트리거 위치 지정
   reverse:false
 });
