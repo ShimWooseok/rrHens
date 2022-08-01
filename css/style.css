@@ -469,7 +469,7 @@ background-color: #2db400;
   transition: 0.5s;
   transition-delay: 0.3s;
 }
-.slide-wrap > .slide .content.active > .txt-box > .sub-title {
+/* .slide-wrap > .slide .content.active > .txt-box > .sub-title {
   transform: translateY(50px);
   opacity: 0;
 }
@@ -495,7 +495,7 @@ background-color: #2db400;
   opacity: 0;
 }
 
-
+ */
 
 
 
