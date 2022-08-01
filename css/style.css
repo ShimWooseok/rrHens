@@ -514,8 +514,9 @@ background-color: #2db400;
 }
 .slide .content02 > .txt-box > .txt{
   margin-top: 23px;
-  color : #66666;
+  color : #1682ff;
   font-size : 20px;
+  font-weight : bold;
 }
 .slide .content02 > .txt-box > .button{
   background: #fff;
