@@ -49,11 +49,7 @@ $(document).ready(function () {
     pauseOnHover: false ,
     });
 
-    $('.slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
-      let num = $(this).index()
-      $(".slide .content").siblings(num).removeClass("active");    
-      $(".slide .content").eq(currentSlide+1).addClass("active");
-  });
+
 
     $(".left-btn").click(function(){
     
