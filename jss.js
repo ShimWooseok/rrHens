@@ -34,8 +34,12 @@ $(document).ready(function () {
     $(".side-fixed-bar").toggleClass("active")
   })
 
+  $('.slide').on('init', function(event, slick){  
+    $(".slide .content").eq(1).addClass("active");    
+  });
+
     $('.slide').slick({
-      infinite: true,
+    infinite: true,
     speed: 500,
     fade: true,
     cssEase: "linear",
@@ -43,8 +47,13 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
     dots: true,
     pauseOnHover: false ,
-
     });
+
+    $('.slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
+      let num = $(this).index()
+      $(".slide .content").siblings(num).removeClass("active");    
+      $(".slide .content").eq(currentSlide+1).addClass("active");
+  });
 
     $(".left-btn").click(function(){
     
