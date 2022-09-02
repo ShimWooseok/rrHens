@@ -76,6 +76,10 @@ $(document).ready(function () {
       slidesPerView: 7,
       spaceBetween: 30,
       centeredSlides: false,
+      loop: true,
+      autoplay : {
+        delay : 1000,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

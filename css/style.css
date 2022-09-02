@@ -160,6 +160,10 @@ li {
 
   
 }
+.menu-bar > .con > ul > li:hover > a > span{
+  color : #1682ff;
+  font-weight: normal;
+}
 .menu-bar > .con > ul > li {
   position: relative;
 }
