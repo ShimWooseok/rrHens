@@ -72,19 +72,7 @@ $(document).ready(function () {
     })
 
 
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 7,
-      spaceBetween: 30,
-      centeredSlides: false,
-      loop: true,
-      autoplay : {
-        delay : 1000,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+
 
     var controller = new ScrollMagic.Controller();
 
