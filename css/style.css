@@ -1383,8 +1383,6 @@ li {
   height: auto;
   background-color: #1682ff;
   margin-top: 280px;
-  padding-top: 45px;
-  padding-bottom: 40px;
   position: relative;
 }
 .footer > .banner > .banner-box01 {
@@ -1396,7 +1394,8 @@ li {
 .footer > .banner > .banner-box02 {
 }
 .footer > .con {
-  height: 100%;
+  height: 550px;
+
 }
 .footer > .con > .top-wrap {
   color: #fff;
@@ -1433,13 +1432,13 @@ li {
 }
 
 .footer > .banner {
-  position: absolute;
-  top: -23%;
-  left: 50%;
-  transform: translateX(-50%);
   width: 1420px;
   height: 445px;
   background-color: #ffa;
+  position: absolute;
+  top : -40%;
+  left : 50%;
+  transform: translateX(-50%);
 }
 .slide .slick-dots li button:before {
   color: #1682ff;
