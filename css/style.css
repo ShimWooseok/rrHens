@@ -1583,3 +1583,9 @@ li {
     left : -4960px;
   }
 } */
+
+@media (min-width : 1900px ){
+  body{
+  overflow-x : hidden;
+  }
+  }
